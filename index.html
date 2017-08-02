@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-app = "starwars">
+    <div>
+      This will always be displayed
+    </div>
+    <ui-view></ui-view>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js" charset="utf-8"></script>
+    <script src="app/app.js" charset="utf-8"></script>
+    <!-- views -->
+    <script src="app/views/home/homeCtrl.js" charset="utf-8"></script>
+    <script src="app/views/starships/starshipsCtrl.js" charset="utf-8"></script>
+    <script src="app/views/starship/starshipCtrl.js" charset="utf-8"></script>
+    <!-- services -->
+    <script src="app/services/starshipsSrvc.js" charset="utf-8"></script>
+  </body>
+</html>
