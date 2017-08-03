@@ -1,0 +1,17 @@
+<!--starshipTemplate.html-->
+<div>
+  <div ng-if="ship.owner"> I am a starship owned by {{ship.owner}} </div>
+  <div> Name: {{ship.details.name}} </div>
+  <div> Cost: {{ship.details.cost_in_credits}} </div>
+  <button ng-click="ship.fullDetails = !ship.fullDetails"> Toggle Details </button>
+  <div ng-show="ship.fullDetails">
+    <div> Manufacturer: {{ship.details.manufacturer}} </div>
+    <div> Length: {{ship.details.length}}</div>
+    <div> Max Atmosphering Speed: {{ship.details.max_atmosphering_speed}}</div>
+    <div> Starhip Class: {{ship.details.starship_class}}</div>
+  </div>
+  <button  ng-hide="ship.fullDetails" ui-sref="starship({id:ship.details.id})"> See More Info {{ship.id}} </button>
+  <button ng-click="ship.goToHyperSpace()"> Go To Hyperspace </button>
+  <br>
+  <br>
+</div>

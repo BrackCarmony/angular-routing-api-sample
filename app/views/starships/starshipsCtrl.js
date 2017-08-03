@@ -4,4 +4,5 @@ angular.module("starwars").controller("starshipsCtrl", function($scope, starship
   starshipsSrvc.getStarships().then(data=>{
     $scope.data = data;
   })
+
 })

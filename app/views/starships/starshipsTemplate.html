@@ -1,12 +1,9 @@
 <div> Starships Ctrl {{name}}</div>
-<div ng-repeat = "ship in data">
-  <div> {{ship.name}} </div>
-  <div> {{ship.cost_in_credits}} </div>
-  <div> {{ship.manufacturer}} </div>
-  <button ui-sref="starship({id:ship.id})"> See More Info {{ship.id}} </button>
-  <br>
-  <br>
-
- </div>
+<starship on-purchase="owner='Han Solo'"
+          owner="{{owner}}"
+          full-details="false"
+          details="ship"
+          ng-repeat = "ship in data">
+</starship>
 
 {{data}}
